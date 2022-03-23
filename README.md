@@ -1,6 +1,6 @@
 # Filter_App
 
-        AMBIENTE REACT NATIVE
+        #AMBIENTE REACT NATIVE
 
     Instalar NodeJs
 
