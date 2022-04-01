@@ -4,8 +4,13 @@
 
     Instalar NodeJs
 
-$sudo apt install nodejs 
-$sudo apt install npm
+Using Ubuntu
+$curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+Using Debian, as root
+curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
+$apt-get install -y nodejs
 
     Instalar JDK 11
 
@@ -28,14 +33,10 @@ crie um virtual device R(android 11)
 
 se preciso na bios coloque como enable o Virtuization Technology
 
-
-
 adicione no bashrc
 
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
-(vim para inserir em arquivo e :x para sair e salvar  )
-
-npm install -g react-native-cli 
+(vim para inserir em arquivo e :x para sair e salvar )
