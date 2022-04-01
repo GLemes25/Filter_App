@@ -7,9 +7,9 @@
 $sudo apt install nodejs 
 $sudo apt install npm
 
-    Instalar JDK
+    Instalar JDK 11
 
-$sudo apt install default-jdk
+$sudo apt-get install openjdk-11-jdk
 
     Instalar Android studio
 
