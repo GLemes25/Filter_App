@@ -8,10 +8,6 @@ Using Ubuntu
 $curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-Using Debian, as root
-curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
-$apt-get install -y nodejs
-
     Instalar JDK 11
 
 $sudo apt-get install openjdk-11-jdk
@@ -35,8 +31,14 @@ se preciso na bios coloque como enable o Virtuization Technology
 
 adicione no bashrc
 
-export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+<!-- export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools -->
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 (vim para inserir em arquivo e :x para sair e salvar )
