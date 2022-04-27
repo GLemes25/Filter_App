@@ -1,22 +1,21 @@
 # Filter_App
 
-        #AMBIENTE REACT NATIVE
+  #AMBIENTE REACT NATIVE
+ 
+*Instalar NodeJs Using Ubuntu
 
-    Instalar NodeJs
+        $curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+        $sudo apt-get install -y nodejs
 
-Using Ubuntu
-$curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-sudo apt-get install -y nodejs
+*Instalar JDK 11
 
-    Instalar JDK 11
+        $sudo apt-get install openjdk-11-jdk
 
-$sudo apt-get install openjdk-11-jdk
+*Instalar Android studio
 
-    Instalar Android studio
-
-$sudo add-apt-repository ppa:maarten-fonville/android-studio 
-$sudo apt-get update
-$sudo apt-get install android-studio
+        $sudo add-apt-repository ppa:maarten-fonville/android-studio 
+        $sudo apt-get update
+        $sudo apt-get install android-studio
 
 garanta que "Android SDK", "Android SDK Platform" e "Android Virtual Device" sejam instalados
 
@@ -29,11 +28,7 @@ crie um virtual device R(android 11)
 
 se preciso na bios coloque como enable o Virtuization Technology
 
-adicione no bashrc
-
-<!-- export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools -->
+*adicione no bashrc
 
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
