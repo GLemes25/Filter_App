@@ -30,10 +30,10 @@ se preciso na bios coloque como enable o Virtuization Technology
 
 *adicione no bashrc
 
-  export ANDROID_HOME=$HOME/Android/Sdk
-  export PATH=$PATH:$ANDROID_HOME/emulator
-  export PATH=$PATH:$ANDROID_HOME/tools
-  export PATH=$PATH:$ANDROID_HOME/tools/bin
-  export PATH=$PATH:$ANDROID_HOME/platform-tools
+       export ANDROID_HOME=$HOME/Android/Sdk
+       export PATH=$PATH:$ANDROID_HOME/emulator
+       export PATH=$PATH:$ANDROID_HOME/tools
+       export PATH=$PATH:$ANDROID_HOME/tools/bin
+       export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 (vim para inserir em arquivo e :x para sair e salvar )
