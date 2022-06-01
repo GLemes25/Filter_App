@@ -4,8 +4,13 @@
  
 *Instalar NodeJs Using Ubuntu
 
-        $curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+        $curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash 
         $sudo apt-get install -y nodejs
+
+                ou
+
+        $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+        $nvm install 17.3.1 .
 
 *Instalar JDK 11
 
@@ -26,7 +31,7 @@ em peckage Details garanta que sera marcado "Android SDK Platform 30" e
 
 crie um virtual device R(android 11)
 
-se preciso na bios coloque como enable o Virtuization Technology
+se preciso, na bios coloque como enable o Virtuization Technology
 
 *adicione no bashrc
 
@@ -36,4 +41,3 @@ se preciso na bios coloque como enable o Virtuization Technology
        export PATH=$PATH:$ANDROID_HOME/tools/bin
        export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-(vim para inserir em arquivo e :x para sair e salvar )
