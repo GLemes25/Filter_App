@@ -1,43 +1,19 @@
-# Filter_App
+# exportar um APK
 
-  #AMBIENTE REACT NATIVE
- 
-*Instalar NodeJs Using Ubuntu
+1. Gerar a keystore com o seguinte comando:
+   keytool -genkeypair -v -storetype PKCS12 -keystore mensurepec.keystore -alias mensurepec -keyalg RSA -keysize 2048 -validity 10000
 
-        $curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash 
-        $sudo apt-get install -y nodejs
+   pass: !dTYi7!3t@&H%y8gXyL$
+   name: MensurePec
+   organizational: MensurePec
+   organization: MensurePec
+   city: Campo Grande
+   state: MS
+   country: BR
 
-                ou
+2. Jogar o arquivo keystore gerado em andorid/app
 
-        $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-        $nvm install 17.3.1 .
+3. Ir para pasta android e executar o seguinte comando:
+   ./gradlew bundleRelease
 
-*Instalar JDK 11
-
-        $sudo apt-get install openjdk-11-jdk
-
-*Instalar Android studio
-
-        $sudo add-apt-repository ppa:maarten-fonville/android-studio 
-        $sudo apt-get update
-        $sudo apt-get install android-studio
-
-garanta que "Android SDK", "Android SDK Platform" e "Android Virtual Device" sejam instalados
-
-click em "Configure"/":" -> "SDK Manager"
-selecione Android 11 (R)
-em peckage Details garanta que sera marcado "Android SDK Platform 30" e
-"Intel x86 Atom_64 System Image" ou "Google APIs Intel x86 Atom System Image"
-
-crie um virtual device R(android 11)
-
-se preciso, na bios coloque como enable o Virtuization Technology
-
-*adicione no bashrc
-
-       export ANDROID_HOME=$HOME/Android/Sdk
-       export PATH=$PATH:$ANDROID_HOME/emulator
-       export PATH=$PATH:$ANDROID_HOME/tools
-       export PATH=$PATH:$ANDROID_HOME/tools/bin
-       export PATH=$PATH:$ANDROID_HOME/platform-tools
-
+4. Se tudo der certo a aplicação poderá ser encontrada em: android/app/build/outputs/bundle

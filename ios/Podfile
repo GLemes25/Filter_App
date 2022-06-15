@@ -4,7 +4,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 platform :ios, '11.0'
 install! 'cocoapods', :deterministic_uuids => false
 
-target 'Filter_App' do
+target 'MensurePec' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -18,8 +18,14 @@ target 'Filter_App' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+ 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
-  target 'Filter_AppTests' do
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
+
+  pod 'RealmJS', :path => '../node_modules/realm'
+
+  target 'MensurePecTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -28,7 +34,7 @@ target 'Filter_App' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  
 
   post_install do |installer|
     react_native_post_install(installer)
